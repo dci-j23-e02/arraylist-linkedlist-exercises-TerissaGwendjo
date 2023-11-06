@@ -27,3 +27,16 @@ public class WarOfNumbers {
     }
 }
 
+//NOTES:
+//List Interface:
+//
+//List is an interface in Java, which is a part of the Java Collections Framework. It defines a collection of elements
+//ordered in a specific sequence. It allows duplicate elements and provides various methods for working with lists,
+//such as adding, removing, and accessing elements.
+//LinkedList Implementation:
+//LinkedList is a concrete class in Java that implements the List interface. It is one of the implementations of lists.
+// A LinkedList is a data structure where elements are stored in nodes, and each node points to the next and previous
+// nodes, creating a linked list. This data structure provides efficient insertion and deletion operations, especially
+// for adding or removing elements from the middle of the list.
+
+
