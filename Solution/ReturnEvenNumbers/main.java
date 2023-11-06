@@ -3,7 +3,7 @@ package ReturnEvenNumbers;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ReturnEvenNumbers.ReturnEvenNumbers.noOdds;
+import static ReturnEvenNumbers.ReturnEvenNumbers.noOdds; //By using static, you can access the method without creating an instance of the class.
 
 public class main {
 
@@ -19,7 +19,8 @@ public class main {
         numbers1.add(8);
 
         List<Integer> result1 = noOdds(numbers1);
-        //System.out.println(result1);  // Output: [2, 4, 6, 8]
+        //This part of the line is a method call. It's calling the noOdds method with numbers1 as its argument.
+        // numbers1 is the argument being passed to the noOdds method. This is a List containing integer values, and the method will operate on this list.
         for (int number : numbers1) {
             System.out.print(number + " ");
         }
@@ -71,3 +72,16 @@ public class main {
         System.out.println();
     }
 }
+
+//NOTES:
+// import: In Java, the import statement is used to make classes and members (such as methods or variables) from other
+// packages or classes accessible in your current class. It essentially allows you to use code from other classes
+// without having to use the fully qualified class name every time.
+//static: The static keyword is used here to import a static method from the specified class.
+//In Java, static methods belong to the class itself, not to specific instances of the class. By using static,
+// you can access the method without creating an instance of the class.
+//ReturnEvenNumbers.ReturnEvenNumbers.noOdds: This part specifies the full path to the static method you want to import.
+// In this case, it's a static method named noOdds in the ReturnEvenNumbers class within a package also named ReturnEvenNumbers.
+//So, the import static statement is essentially allowing you to use the noOdds method from the ReturnEvenNumbers class
+// directly without having to reference it with the class name each time you want to use it in your code. For example,
+// you can now simply call noOdds(...) in your code rather than ReturnEvenNumbers.ReturnEvenNumbers.noOdds(...).

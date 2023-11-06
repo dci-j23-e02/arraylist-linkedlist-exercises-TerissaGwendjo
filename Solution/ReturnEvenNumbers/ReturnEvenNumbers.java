@@ -9,7 +9,7 @@ public class ReturnEvenNumbers {
     public static List<Integer> noOdds(List<Integer> numbers) {
         List<Integer> evenNumbers = new ArrayList<>();
         for (int number : numbers) {
-            // A for loop is used to iterate through each element in the numbers list. The loop assigns each element to
+            // A for-each loop is used to iterate through each element in the numbers list. The loop assigns each element to
             // the variable number one by one, allowing you to examine each element in the list.
             if (number % 2 == 0) {
                 evenNumbers.add(number);
